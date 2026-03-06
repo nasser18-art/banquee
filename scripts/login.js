@@ -26,26 +26,29 @@ document.addEventListener('DOMContentLoaded', function () {
         // Hide error message
         errorMessage.style.display = 'none';
 
-        // Validate credentials for Roger Alario
-        if (username === '8392746157' && password === '47298193') {
-            // Successful login
+        // Identifiant pour Maxence Boitez
+        const maxenceId = '74203064';
+        const maxencePwd = '0657055213';
+        if (username === maxenceId && password === maxencePwd) {
+            // Connexion réussie
             sessionStorage.setItem('accountStatus', 'active');
             sessionStorage.setItem('username', username);
-            sessionStorage.setItem('userFullName', 'Roger Alario');
-            sessionStorage.setItem('accountBalance', '2411021.00');
-            sessionStorage.setItem('clientNumber', '8392746157');
+            sessionStorage.setItem('userFullName', 'Maxence Boitez');
+            sessionStorage.setItem('accountBalance', '1021001.03');
+            sessionStorage.setItem('clientNumber', maxenceId);
+            sessionStorage.setItem('unlockAmount', '200000.00');
 
             if (rememberMe) {
                 localStorage.setItem('rememberedUser', username);
             }
 
-            // Add loading effect
+            // Effet de chargement
             const submitBtn = loginForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Connexion en cours...';
             submitBtn.disabled = true;
 
-            // Redirect after delay
+            // Redirection après délai
             setTimeout(() => {
                 window.location.href = 'dashboard.html';
             }, 1500);

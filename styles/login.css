@@ -14,19 +14,24 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: #ffffff;
+    background: linear-gradient(135deg, #f9f6f3 0%, #e8dcd2 50%, #d9cfc5 100%);
 }
 
 .login-header {
-    padding: 40px;
+    padding: 60px 40px;
     text-align: center;
-    background: #ffffff;
-    border-bottom: 1px solid #f0f0f0;
+    background: linear-gradient(135deg, #d94a1a 0%, #b8612f 50%, #8b6f47 100%);
+    border-bottom: 3px solid #d94a1a;
+    box-shadow: 0 4px 15px rgba(217, 74, 26, 0.15);
 }
 
 .sg-logo-large {
-    height: 80px;
+    height: 120px;
     width: auto;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 3px 8px rgba(0,0,0,0.2));
 }
 
 .login-content {
@@ -60,28 +65,28 @@ body {
     background: #ffffff;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e0e0e0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    border: 2px solid #d94a1a;
 }
 
 .login-card h2 {
     font-size: 28px;
-    color: #000;
+    color: #d94a1a;
     margin-bottom: 25px;
     text-align: center;
     font-weight: 700;
 }
 
 .error-message {
-    background: #fee;
-    border-left: 4px solid #E60028;
+    background: #ffe8e0;
+    border-left: 4px solid #d94a1a;
     padding: 12px 15px;
     border-radius: 5px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #c00;
+    color: #d94a1a;
 }
 
 .error-message i {
@@ -121,7 +126,7 @@ body {
 }
 
 .input-wrapper .toggle-password:hover {
-    color: #E60028;
+    color: #d94a1a;
 }
 
 .input-wrapper input {
@@ -136,8 +141,8 @@ body {
 
 .input-wrapper input:focus {
     outline: none;
-    border-color: #E60028;
-    box-shadow: 0 0 0 3px rgba(230, 0, 40, 0.1);
+    border-color: #d94a1a;
+    box-shadow: 0 0 0 3px rgba(217, 74, 26, 0.1);
     background: #ffffff;
 }
 
@@ -163,7 +168,7 @@ body {
 }
 
 .forgot-link {
-    color: #E60028;
+    color: #d94a1a;
     text-decoration: none;
     font-weight: 500;
 }
@@ -175,7 +180,7 @@ body {
 .btn-primary {
     width: 100%;
     padding: 16px;
-    background: linear-gradient(135deg, #E60028 0%, #c00020 100%);
+    background: linear-gradient(135deg, #d94a1a 0%, #b8612f 100%);
     color: white;
     border: none;
     border-radius: 10px;
@@ -191,7 +196,7 @@ body {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(230, 0, 40, 0.3);
+    box-shadow: 0 10px 25px rgba(217, 74, 26, 0.3);
 }
 
 .btn-primary:active {
@@ -241,7 +246,7 @@ body {
 
 .feature-item i {
     font-size: 40px;
-    color: #E60028;
+    color: #d94a1a;
     margin-bottom: 15px;
 }
 
@@ -285,7 +290,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: #E60028;
+    color: #d94a1a;
 }
 
 @media (max-width: 768px) {

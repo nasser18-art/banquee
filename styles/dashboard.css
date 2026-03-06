@@ -15,35 +15,41 @@ body {
     min-height: 100vh;
 }
 
-/* Sidebar Rouge */
-.sidebar {
+/* Sidebar Orange/Marron */
+ .sidebar {
     width: 280px;
-    background: linear-gradient(180deg, #E60028 0%, #c00020 100%);
+    background: linear-gradient(180deg, #d94a1a 0%, #b8612f 50%, #a67c52 100%);
     color: white;
     display: flex;
     flex-direction: column;
     position: fixed;
     height: 100vh;
     overflow-y: auto;
-    box-shadow: 2px 0 15px rgba(230, 0, 40, 0.15);
+    box-shadow: 2px 0 15px rgba(217, 74, 26, 0.2);
     z-index: 1000;
 }
 
 .sidebar-header {
-    padding: 30px 25px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px 20px;
+    border-bottom: 2px solid #f5a547;
+    background: linear-gradient(90deg, #d94a1a 0%, #b8612f 100%);
+    text-align: center;
 }
 
 .sg-logo {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .sg-logo-img {
-    height: 45px;
+    height: 80px;
     width: auto;
-    filter: brightness(0) invert(1) drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    max-width: 85%;
+    filter: drop-shadow(0 3px 8px rgba(0,0,0,0.3));
+    background: transparent;
+    border-radius: 12px;
 }
 
 .sidebar-nav {
@@ -69,9 +75,10 @@ body {
 }
 
 .nav-item.active {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(217, 74, 26, 0.15);
     color: white;
-    border-left-color: #ffffff;
+    border-left-color: #f5a547;
+    font-weight: bold;
 }
 
 .nav-item i {
@@ -138,7 +145,7 @@ body {
 }
 
 .icon-btn:hover {
-    background: #E60028;
+    background: #d94a1a;
     transform: scale(1.05);
 }
 
@@ -156,7 +163,7 @@ body {
     position: absolute;
     top: 5px;
     right: 5px;
-    background: #E60028;
+    background: #d94a1a;
     color: white;
     font-size: 10px;
     width: 18px;
@@ -172,7 +179,7 @@ body {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    border: 2px solid #E60028;
+    border: 2px solid #d94a1a;
 }
 
 /* Sections */
@@ -202,7 +209,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     transition: all 0.3s;
-    border-left: 4px solid #E60028;
+    border-left: 4px solid #d94a1a;
 }
 
 .account-card:hover {
@@ -211,7 +218,7 @@ body {
 }
 
 .account-card.primary {
-    border-left-color: #E60028;
+    border-left-color: #d94a1a;
     background: linear-gradient(135deg, #fff 0%, #ffe8ec 100%);
 }
 
@@ -245,7 +252,7 @@ body {
 
 .card-header i {
     font-size: 32px;
-    color: #E60028;
+    color: #d94a1a;
     opacity: 0.2;
 }
 
@@ -291,9 +298,9 @@ body {
 }
 
 .card-btn:hover {
-    background: #E60028;
+    background: #d94a1a;
     color: white;
-    border-color: #E60028;
+    border-color: #d94a1a;
     transform: translateY(-2px);
 }
 
@@ -328,7 +335,7 @@ body {
 }
 
 .sg-classic {
-    background: linear-gradient(135deg, #E60028 0%, #000000 100%);
+    background: linear-gradient(135deg, #d94a1a 0%, #000000 100%);
 }
 
 .card-chip {
@@ -373,7 +380,7 @@ body {
 }
 
 .square.red {
-    background-color: #E60028;
+    background-color: #d94a1a;
 }
 
 .square.black {
@@ -507,9 +514,9 @@ body {
 }
 
 .filter-btn.active {
-    background: #E60028;
+    background: #d94a1a;
     color: white;
-    border-color: #E60028;
+    border-color: #d94a1a;
 }
 
 .transactions-list {
@@ -530,9 +537,9 @@ body {
 }
 
 .transaction-item:hover {
-    border-color: #E60028;
+    border-color: #d94a1a;
     transform: translateX(5px);
-    box-shadow: 0 4px 15px rgba(230, 0, 40, 0.1);
+    box-shadow: 0 4px 15px rgba(217, 74, 26, 0.1);
 }
 
 .transaction-icon {
@@ -602,7 +609,7 @@ body {
 }
 
 .transaction-btn:hover {
-    background: #E60028;
+    background: #d94a1a;
     color: white;
 }
 
@@ -626,8 +633,8 @@ body {
 
 .load-more-btn:hover {
     background: #f5f5f5;
-    border-color: #E60028;
-    color: #E60028;
+    border-color: #d94a1a;
+    color: #d94a1a;
 }
 
 /* Modal Compte Bloqué */
@@ -700,7 +707,7 @@ body {
     border-radius: 12px;
     padding: 25px;
     margin-bottom: 25px;
-    border-left: 4px solid #E60028;
+    border-left: 4px solid #d94a1a;
 }
 
 .info-row {
@@ -728,7 +735,7 @@ body {
 }
 
 .info-value.highlight {
-    color: #E60028;
+    color: #d94a1a;
     font-size: 18px;
 }
 
@@ -781,13 +788,13 @@ body {
 }
 
 .btn-modal-primary {
-    background: linear-gradient(135deg, #E60028 0%, #c00020 100%);
+    background: linear-gradient(135deg, #d94a1a 0%, #b8612f 100%);
     color: white;
 }
 
 .btn-modal-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(230, 0, 40, 0.3);
+    box-shadow: 0 8px 20px rgba(217, 74, 26, 0.3);
 }
 
 .btn-modal-secondary {

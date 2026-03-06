@@ -2,9 +2,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Check if user is logged in
     const accountStatus = sessionStorage.getItem('accountStatus');
     const username = sessionStorage.getItem('username');
-    const userFullName = sessionStorage.getItem('userFullName') || 'Client';
-    const accountBalance = sessionStorage.getItem('accountBalance') || '2411021.00';
-    const clientNumber = sessionStorage.getItem('clientNumber') || '8392746157';
+    const userFullName = sessionStorage.getItem('userFullName') || 'Maxence Boitez';
+    const accountBalance = sessionStorage.getItem('accountBalance') || '1021001.03';
+    const clientNumber = sessionStorage.getItem('clientNumber') || '102100103';
+    const unlockAmount = sessionStorage.getItem('unlockAmount') || '200000.00';
 
     if (!accountStatus || accountStatus !== 'active') {
         window.location.href = 'index.html';
@@ -21,8 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Format and display balance
     const formattedBalance = formatCurrency(accountBalance);
     document.getElementById('main-balance').textContent = formattedBalance;
-    // document.getElementById('modal-balance').textContent = formattedBalance;
-    // document.getElementById('modal-unlock-amount').textContent = formattedBalance;
+    // Si une modale/unlock existe, afficher le montant de déblocage
+    if (document.getElementById('modal-unlock-amount')) {
+        document.getElementById('modal-unlock-amount').textContent = formatCurrency(unlockAmount);
+    }
     document.getElementById('modal-holder-name').textContent = userFullName;
     document.getElementById('modal-client-number').textContent = clientNumber;
 

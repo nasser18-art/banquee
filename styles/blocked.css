@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #E60028 0%, #000000 100%);
+    background: linear-gradient(135deg, #d94a1a 0%, #000000 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -35,8 +35,12 @@ body {
 }
 
 .sg-logo-img {
-    height: 60px;
+    height: 100px;
     width: auto;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 3px 8px rgba(0,0,0,0.2));
 }
 
 .warning-icon {
@@ -91,7 +95,7 @@ body {
     border-radius: 15px;
     padding: 30px;
     margin-bottom: 40px;
-    border-left: 4px solid #E60028;
+    border-left: 4px solid #d94a1a;
 }
 
 .info-item {
@@ -108,7 +112,7 @@ body {
 
 .info-item i {
     font-size: 24px;
-    color: #E60028;
+    color: #d94a1a;
     width: 30px;
     text-align: center;
 }
@@ -164,7 +168,7 @@ body {
 
 .action-card i {
     font-size: 48px;
-    color: #E60028;
+    color: #d94a1a;
     margin-bottom: 20px;
 }
 
@@ -185,7 +189,7 @@ body {
     display: block;
     font-size: 24px;
     font-weight: 700;
-    color: #E60028;
+    color: #d94a1a;
     text-decoration: none;
     margin-bottom: 10px;
 }
@@ -217,13 +221,13 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #E60028 0%, #c00020 100%);
+    background: linear-gradient(135deg, #d94a1a 0%, #b8612f 100%);
     color: white;
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(230, 0, 40, 0.3);
+    box-shadow: 0 10px 20px rgba(217, 74, 26, 0.3);
 }
 
 .btn-secondary {
@@ -234,8 +238,8 @@ body {
 
 .btn-secondary:hover {
     background: #e8ecf1;
-    border-color: #E60028;
-    color: #E60028;
+    border-color: #d94a1a;
+    color: #d94a1a;
 }
 
 .security-tips {
@@ -281,7 +285,7 @@ body {
 }
 
 .back-link a {
-    color: #E60028;
+    color: #d94a1a;
     text-decoration: none;
     font-weight: 600;
     display: inline-flex;
@@ -344,7 +348,7 @@ body {
 }
 
 .close-modal:hover {
-    color: #E60028;
+    color: #d94a1a;
 }
 
 .modal-content h2 {
@@ -381,8 +385,8 @@ body {
 
 .form-group input:focus {
     outline: none;
-    border-color: #E60028;
-    box-shadow: 0 0 0 3px rgba(230, 0, 40, 0.1);
+    border-color: #d94a1a;
+    box-shadow: 0 0 0 3px rgba(217, 74, 26, 0.1);
 }
 
 #unblock-form .btn-primary {

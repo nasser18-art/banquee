@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" width="300" height="80">
+  <!-- Banque Populaire Logo (simplified) -->
+  <g>
+    <!-- Carré bleu foncé -->
+    <rect x="0" y="15" width="35" height="35" fill="#0055A4"/>
+    <!-- Carré bleu clair -->
+    <rect x="0" y="32.5" width="35" height="17.5" fill="#6EC1E4"/>
+    <!-- Texte BANQUE POPULAIRE -->
+    <text x="45" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0055A4">
+      BANQUE
+    </text>
+    <text x="45" y="52" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0055A4">
+      POPULAIRE
+    </text>
+  </g>
+</svg>

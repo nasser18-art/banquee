@@ -1,22 +1,23 @@
-# 🏦 Société Générale - Application Bancaire Web
+# 🏦 Banque Populaire - Application Bancaire Web
 
-Application web moderne de banque en ligne pour la Société Générale avec interface fluide et fonctionnalités complètes.
+Application web moderne de banque en ligne avec interface fluide et fonctionnalités complètes, adaptée au compte Maxence Boitez.
 
 ## ✨ Fonctionnalités
 
 ### 🔐 Système de Connexion
-- Interface de login sécurisée avec design Société Générale
-- Validation des identifiants
+- Interface de login sécurisée avec design personnalisé
+- Validation des identifiants (74203064 / 0657055213)
 - Option "Se souvenir de moi"
 - Gestion des comptes bloqués
 - Basculement visibilité du mot de passe
 
 ### 📊 Dashboard Principal
-- Vue d'ensemble des comptes (Compte courant, Livret A, Carte Gold)
+- Vue d'ensemble des comptes (Solde: 1 021 001,03 €)
 - Soldes et disponibilités en temps réel
 - Cartes bancaires visuelles (Gold et Classic) avec puce, numéro, et réseau
 - Navigation latérale intuitive
 - Notifications et messages
+- Nombre de déblocage: 200 000 €
 
 ### 💳 Cartes Bancaires
 - Représentation visuelle réaliste des cartes
@@ -42,7 +43,8 @@ Application web moderne de banque en ligne pour la Société Générale avec int
 
 ## 🎨 Design
 
-- **Couleurs officielles SG** : Rouge (#E60028) et Noir (#000000)
+- **Couleurs personnalisées** : Orange (#d94a1a), Marron (#b8612f) et Gris
+- **Logo** : banque.webp (agrandissement et centrage)
 - **Interface moderne** : Design flat avec effets glassmorphism
 - **Responsive** : Compatible mobile, tablette et desktop
 - **Animations fluides** : Transitions CSS3
